@@ -1,0 +1,12 @@
+<form [formGroup]="productForm" (ngSubmit)="saveProduct()">
+  <label for="name">Name</label>
+  <input id="name" formControlName="name">
+
+  <label for="price">Price</label>
+  <input id="price" formControlName="price">
+
+  <label for="description">Description</label>
+  <input id="description" formControlName="description">
+
+  <button type="submit">Save</button>
+</form>
